@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F20AA421D8B0FD700BB57C5 /* chessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA411D8B0FD700BB57C5 /* chessPiece.png */; };
+		7F20AA441D8B11B900BB57C5 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */; };
+		7F20AA461D8B238B00BB57C5 /* blueChessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */; };
+		7FA4FAE51D88772000A0BF30 /* ClubNameCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */; };
+		7FA4FAE71D8877F000A0BF30 /* ClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */; };
+		7FA4FAEE1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */; };
 		7FCB90FD1D83616000DEDC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */; };
-		7FCB90FF1D83616000DEDC7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB90FE1D83616000DEDC7F /* ViewController.swift */; };
 		7FCB91021D83616000DEDC7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91001D83616000DEDC7F /* Main.storyboard */; };
 		7FCB91041D83616000DEDC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91031D83616000DEDC7F /* Assets.xcassets */; };
 		7FCB91071D83616000DEDC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F20AA411D8B0FD700BB57C5 /* chessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chessPiece.png; sourceTree = "<group>"; };
+		7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueChessPiece.png; sourceTree = "<group>"; };
+		7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubNameCollectionViewController.swift; sourceTree = "<group>"; };
+		7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubEmptyCollectionViewCell.swift; sourceTree = "<group>"; };
 		7FCB90F91D83616000DEDC7F /* ChessClubMangager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClubMangager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7FCB90FE1D83616000DEDC7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7FCB91011D83616000DEDC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FCB91031D83616000DEDC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCB91061D83616000DEDC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FA4FAE81D888A6500A0BF30 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */,
+				7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		7FA4FAE91D888A8900A0BF30 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7FA4FAEA1D888AA900A0BF30 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB91001D83616000DEDC7F /* Main.storyboard */,
+				7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		7FA4FAEB1D888AE800A0BF30 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		7FA4FAEC1D888B0400A0BF30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F20AA411D8B0FD700BB57C5 /* chessPiece.png */,
+				7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */,
+				7FCB91081D83616000DEDC7F /* Info.plist */,
+				7FCB91031D83616000DEDC7F /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		7FCB90F01D83616000DEDC7F = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +109,12 @@
 		7FCB90FB1D83616000DEDC7F /* ChessClubMangager */ = {
 			isa = PBXGroup;
 			children = (
-				7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */,
-				7FCB90FE1D83616000DEDC7F /* ViewController.swift */,
-				7FCB91001D83616000DEDC7F /* Main.storyboard */,
-				7FCB91031D83616000DEDC7F /* Assets.xcassets */,
-				7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */,
-				7FCB91081D83616000DEDC7F /* Info.plist */,
+				7FA4FAEA1D888AA900A0BF30 /* Layout */,
+				7FA4FAE91D888A8900A0BF30 /* Controllers */,
+				7FA4FAE81D888A6500A0BF30 /* Layouts */,
+				7FA4FAEB1D888AE800A0BF30 /* Other */,
+				7FA4FAEC1D888B0400A0BF30 /* Resources */,
+				7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */,
 			);
 			path = ChessClubMangager;
 			sourceTree = "<group>";
@@ -126,6 +181,8 @@
 				7FCB91071D83616000DEDC7F /* LaunchScreen.storyboard in Resources */,
 				7FCB91041D83616000DEDC7F /* Assets.xcassets in Resources */,
 				7FCB91021D83616000DEDC7F /* Main.storyboard in Resources */,
+				7F20AA461D8B238B00BB57C5 /* blueChessPiece.png in Resources */,
+				7F20AA421D8B0FD700BB57C5 /* chessPiece.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FCB90FF1D83616000DEDC7F /* ViewController.swift in Sources */,
+				7F20AA441D8B11B900BB57C5 /* PushButtonView.swift in Sources */,
+				7FA4FAE71D8877F000A0BF30 /* ClubCollectionViewCell.swift in Sources */,
+				7FA4FAEE1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift in Sources */,
 				7FCB90FD1D83616000DEDC7F /* AppDelegate.swift in Sources */,
+				7FA4FAE51D88772000A0BF30 /* ClubNameCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +349,7 @@
 				7FCB910D1D83616000DEDC7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
