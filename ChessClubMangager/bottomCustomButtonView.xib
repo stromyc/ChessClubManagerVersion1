@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ClubNameCollectionViewController" customModule="ChessClubMangager" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomCustomButtonView" customModule="ChessClubMangager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="900" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lI8-37-FYJ">
+                    <color key="backgroundColor" red="0.058823529411764705" green="0.27843137254901962" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="nmi-YJ-JrA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Naf-pR-adN" customClass="PushButtonView" customModule="ChessClubMangager" customModuleProvider="target">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="0Rp-8w-E48"/>
+                        <constraint firstAttribute="height" constant="70" id="rZe-eA-XiZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="buttomCustomButtonPressed:" destination="-1" eventType="touchUpInside" id="mzA-sn-qG2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azl-YB-V0f">
+                    <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="28"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Naf-pR-adN" secondAttribute="bottom" constant="30" id="4Sk-RA-h6W"/>
+                <constraint firstAttribute="bottom" secondItem="Azl-YB-V0f" secondAttribute="bottom" constant="5" id="7c6-mF-U1T"/>
+                <constraint firstItem="Azl-YB-V0f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LR1-kK-9ae"/>
+                <constraint firstItem="Naf-pR-adN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YuU-2n-nea"/>
+                <constraint firstItem="lI8-37-FYJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gLB-Ju-0Tb"/>
+                <constraint firstAttribute="bottom" secondItem="lI8-37-FYJ" secondAttribute="bottom" id="qwG-VF-hMV"/>
+                <constraint firstAttribute="trailing" secondItem="lI8-37-FYJ" secondAttribute="trailing" id="rSS-i2-Ghd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomBarViewColoredBlue" destination="lI8-37-FYJ" id="6ln-8N-Zje"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="321"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ClubEntity" representedClassName="ClubEntity" syncable="YES">
+        <attribute name="clubDirector" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="clubName" attributeType="String" syncable="YES"/>
+        <attribute name="displayOrder" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="match" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MatchEntity" inverseName="club" inverseEntity="MatchEntity" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PlayerEntity" inverseName="club" inverseEntity="PlayerEntity" syncable="YES"/>
+    </entity>
+    <entity name="MatchEntity" representedClassName=".MatchEntity" syncable="YES">
+        <attribute name="matchDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="matchOutcome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="club" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="ClubEntity" inverseName="match" inverseEntity="ClubEntity" syncable="YES"/>
+    </entity>
+    <entity name="PlayerEntity" representedClassName="PlayerEntity" syncable="YES">
+        <attribute name="clubID" attributeType="String" syncable="YES"/>
+        <attribute name="displayOrder" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="draws" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="losses" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="score" attributeType="Double" minValueString="0" maxValueString="1400" defaultValueString="700" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wins" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="club" maxCount="1" deletionRule="Cascade" destinationEntity="ClubEntity" inverseName="players" inverseEntity="ClubEntity" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ClubEntity" positionX="-317" positionY="-205" width="128" height="120"/>
+        <element name="MatchEntity" positionX="-101" positionY="-106" width="128" height="88"/>
+        <element name="PlayerEntity" positionX="-101" positionY="-295" width="128" height="180"/>
+    </elements>
+</model>

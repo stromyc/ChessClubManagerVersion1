@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F20AA421D8B0FD700BB57C5 /* chessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA411D8B0FD700BB57C5 /* chessPiece.png */; };
+		7F20AA441D8B11B900BB57C5 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */; };
+		7F20AA461D8B238B00BB57C5 /* blueChessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */; };
+		7F8DBDD51D919FBD00E52824 /* CreateNewClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */; };
+		7F8DBDD81D97A5DF00E52824 /* mmBusinessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDD71D97A5DF00E52824 /* mmBusinessObject.swift */; };
+		7F8DBDDB1D99B44600E52824 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8DBDDA1D99B44600E52824 /* CoreData.framework */; };
+		7F8DBDDE1D99B49E00E52824 /* ChessClubManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDDC1D99B49E00E52824 /* ChessClubManager.xcdatamodeld */; };
+		7F8DBDE01D99B4CC00E52824 /* ABusinessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDDF1D99B4CC00E52824 /* ABusinessObject.swift */; };
+		7F8DBDE71D9AD7CB00E52824 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDE11D9AD7CB00E52824 /* Match.swift */; };
+		7F8DBDE81D9AD7CB00E52824 /* MatchEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDE21D9AD7CB00E52824 /* MatchEntity.swift */; };
+		7F8DBDEB1D9AD7CB00E52824 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDE51D9AD7CB00E52824 /* Player.swift */; };
+		7F8DBDEC1D9AD7CB00E52824 /* PlayerEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDE61D9AD7CB00E52824 /* PlayerEntity.swift */; };
+		7F8DBDEE1D9B278F00E52824 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDED1D9B278F00E52824 /* Club.swift */; };
+		7F8DBDF01D9B27C500E52824 /* ClubEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDEF1D9B27C400E52824 /* ClubEntity.swift */; };
+		7F8DBDF41D9C59FF00E52824 /* BottomCustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDF31D9C59FF00E52824 /* BottomCustomButtonView.swift */; };
+		7F8DBDF61D9C5A3100E52824 /* bottomCustomButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F8DBDF51D9C5A3100E52824 /* bottomCustomButtonView.xib */; };
+		7FA4FAE51D88772000A0BF30 /* ClubNameCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */; };
+		7FA4FAE71D8877F000A0BF30 /* ClubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */; };
+		7FA4FAEE1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */; };
+		7FCB90FD1D83616000DEDC7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */; };
+		7FCB91021D83616000DEDC7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91001D83616000DEDC7F /* Main.storyboard */; };
+		7FCB91041D83616000DEDC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91031D83616000DEDC7F /* Assets.xcassets */; };
+		7FCB91071D83616000DEDC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */; };
+		7FF93F491DA3866800BBED4C /* trashCan.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF93F481DA3866800BBED4C /* trashCan.png */; };
+		7FF93F4B1DA38B8B00BBED4C /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F20AA411D8B0FD700BB57C5 /* chessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chessPiece.png; sourceTree = "<group>"; };
+		7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueChessPiece.png; sourceTree = "<group>"; };
+		7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewClubViewController.swift; sourceTree = "<group>"; };
+		7F8DBDD71D97A5DF00E52824 /* mmBusinessObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mmBusinessObject.swift; sourceTree = "<group>"; };
+		7F8DBDDA1D99B44600E52824 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F8DBDDD1D99B49E00E52824 /* ChessClubManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChessClubManager.xcdatamodel; sourceTree = "<group>"; };
+		7F8DBDDF1D99B4CC00E52824 /* ABusinessObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABusinessObject.swift; sourceTree = "<group>"; };
+		7F8DBDE11D9AD7CB00E52824 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Match.swift; path = ../Match.swift; sourceTree = "<group>"; };
+		7F8DBDE21D9AD7CB00E52824 /* MatchEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchEntity.swift; path = ../MatchEntity.swift; sourceTree = "<group>"; };
+		7F8DBDE51D9AD7CB00E52824 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = ../Player.swift; sourceTree = "<group>"; };
+		7F8DBDE61D9AD7CB00E52824 /* PlayerEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayerEntity.swift; path = ../PlayerEntity.swift; sourceTree = "<group>"; };
+		7F8DBDED1D9B278F00E52824 /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		7F8DBDEF1D9B27C400E52824 /* ClubEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubEntity.swift; sourceTree = "<group>"; };
+		7F8DBDF31D9C59FF00E52824 /* BottomCustomButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomCustomButtonView.swift; sourceTree = "<group>"; };
+		7F8DBDF51D9C5A3100E52824 /* bottomCustomButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = bottomCustomButtonView.xib; sourceTree = "<group>"; };
+		7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubNameCollectionViewController.swift; sourceTree = "<group>"; };
+		7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubEmptyCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FCB90F91D83616000DEDC7F /* ChessClubMangager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClubMangager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FCB91011D83616000DEDC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FCB91031D83616000DEDC7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FCB91061D83616000DEDC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FCB91081D83616000DEDC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF93F481DA3866800BBED4C /* trashCan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trashCan.png; sourceTree = "<group>"; };
+		7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FCB90F61D83616000DEDC7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8DBDDB1D99B44600E52824 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F8DBDD61D97A5BF00E52824 /* Business Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DBDE51D9AD7CB00E52824 /* Player.swift */,
+				7F8DBDE61D9AD7CB00E52824 /* PlayerEntity.swift */,
+				7F8DBDE11D9AD7CB00E52824 /* Match.swift */,
+				7F8DBDE21D9AD7CB00E52824 /* MatchEntity.swift */,
+				7F8DBDD71D97A5DF00E52824 /* mmBusinessObject.swift */,
+				7F8DBDDF1D99B4CC00E52824 /* ABusinessObject.swift */,
+				7F8DBDDC1D99B49E00E52824 /* ChessClubManager.xcdatamodeld */,
+				7F8DBDED1D9B278F00E52824 /* Club.swift */,
+				7F8DBDEF1D9B27C400E52824 /* ClubEntity.swift */,
+			);
+			name = "Business Layer";
+			sourceTree = "<group>";
+		};
+		7F8DBDD91D99B44600E52824 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DBDDA1D99B44600E52824 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FA4FAE81D888A6500A0BF30 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4FAE61D8877F000A0BF30 /* ClubCollectionViewCell.swift */,
+				7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */,
+				7F8DBDF31D9C59FF00E52824 /* BottomCustomButtonView.swift */,
+				7F8DBDF51D9C5A3100E52824 /* bottomCustomButtonView.xib */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		7FA4FAE91D888A8900A0BF30 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */,
+				7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */,
+				7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7FA4FAEA1D888AA900A0BF30 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB91001D83616000DEDC7F /* Main.storyboard */,
+				7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		7FA4FAEB1D888AE800A0BF30 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB90FC1D83616000DEDC7F /* AppDelegate.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		7FA4FAEC1D888B0400A0BF30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F20AA411D8B0FD700BB57C5 /* chessPiece.png */,
+				7FF93F481DA3866800BBED4C /* trashCan.png */,
+				7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */,
+				7FCB91081D83616000DEDC7F /* Info.plist */,
+				7FCB91031D83616000DEDC7F /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7FCB90F01D83616000DEDC7F = {
+			isa = PBXGroup;
+			children = (
+				7FCB90FB1D83616000DEDC7F /* ChessClubMangager */,
+				7FCB90FA1D83616000DEDC7F /* Products */,
+				7F8DBDD91D99B44600E52824 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7FCB90FA1D83616000DEDC7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FCB90F91D83616000DEDC7F /* ChessClubMangager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FCB90FB1D83616000DEDC7F /* ChessClubMangager */ = {
+			isa = PBXGroup;
+			children = (
+				7F8DBDD61D97A5BF00E52824 /* Business Layer */,
+				7FA4FAEA1D888AA900A0BF30 /* Layout */,
+				7FA4FAE91D888A8900A0BF30 /* Controllers */,
+				7FA4FAE81D888A6500A0BF30 /* Layouts */,
+				7FA4FAEB1D888AE800A0BF30 /* Other */,
+				7FA4FAEC1D888B0400A0BF30 /* Resources */,
+				7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */,
+			);
+			path = ChessClubMangager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FCB90F81D83616000DEDC7F /* ChessClubMangager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FCB910B1D83616000DEDC7F /* Build configuration list for PBXNativeTarget "ChessClubMangager" */;
+			buildPhases = (
+				7FCB90F51D83616000DEDC7F /* Sources */,
+				7FCB90F61D83616000DEDC7F /* Frameworks */,
+				7FCB90F71D83616000DEDC7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChessClubMangager;
+			productName = ChessClubMangager;
+			productReference = 7FCB90F91D83616000DEDC7F /* ChessClubMangager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FCB90F11D83616000DEDC7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Chris Stromberg";
+				TargetAttributes = {
+					7FCB90F81D83616000DEDC7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 23695MP334;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 7FCB90F41D83616000DEDC7F /* Build configuration list for PBXProject "ChessClubMangager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FCB90F01D83616000DEDC7F;
+			productRefGroup = 7FCB90FA1D83616000DEDC7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FCB90F81D83616000DEDC7F /* ChessClubMangager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FCB90F71D83616000DEDC7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8DBDF61D9C5A3100E52824 /* bottomCustomButtonView.xib in Resources */,
+				7FCB91071D83616000DEDC7F /* LaunchScreen.storyboard in Resources */,
+				7FCB91041D83616000DEDC7F /* Assets.xcassets in Resources */,
+				7FCB91021D83616000DEDC7F /* Main.storyboard in Resources */,
+				7F20AA461D8B238B00BB57C5 /* blueChessPiece.png in Resources */,
+				7FF93F491DA3866800BBED4C /* trashCan.png in Resources */,
+				7F20AA421D8B0FD700BB57C5 /* chessPiece.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FCB90F51D83616000DEDC7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F8DBDEB1D9AD7CB00E52824 /* Player.swift in Sources */,
+				7F20AA441D8B11B900BB57C5 /* PushButtonView.swift in Sources */,
+				7F8DBDEC1D9AD7CB00E52824 /* PlayerEntity.swift in Sources */,
+				7F8DBDD51D919FBD00E52824 /* CreateNewClubViewController.swift in Sources */,
+				7F8DBDE01D99B4CC00E52824 /* ABusinessObject.swift in Sources */,
+				7FA4FAE71D8877F000A0BF30 /* ClubCollectionViewCell.swift in Sources */,
+				7FA4FAEE1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift in Sources */,
+				7F8DBDE81D9AD7CB00E52824 /* MatchEntity.swift in Sources */,
+				7F8DBDDE1D99B49E00E52824 /* ChessClubManager.xcdatamodeld in Sources */,
+				7FF93F4B1DA38B8B00BBED4C /* ClubDetailViewController.swift in Sources */,
+				7F8DBDEE1D9B278F00E52824 /* Club.swift in Sources */,
+				7F8DBDE71D9AD7CB00E52824 /* Match.swift in Sources */,
+				7FCB90FD1D83616000DEDC7F /* AppDelegate.swift in Sources */,
+				7F8DBDD81D97A5DF00E52824 /* mmBusinessObject.swift in Sources */,
+				7F8DBDF01D9B27C500E52824 /* ClubEntity.swift in Sources */,
+				7F8DBDF41D9C59FF00E52824 /* BottomCustomButtonView.swift in Sources */,
+				7FA4FAE51D88772000A0BF30 /* ClubNameCollectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7FCB91001D83616000DEDC7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FCB91011D83616000DEDC7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FCB91061D83616000DEDC7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FCB91091D83616000DEDC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FCB910A1D83616000DEDC7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FCB910C1D83616000DEDC7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChessClubMangager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisstromberg.ChessClubMangager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7FCB910D1D83616000DEDC7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChessClubMangager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisstromberg.ChessClubMangager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FCB90F41D83616000DEDC7F /* Build configuration list for PBXProject "ChessClubMangager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCB91091D83616000DEDC7F /* Debug */,
+				7FCB910A1D83616000DEDC7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FCB910B1D83616000DEDC7F /* Build configuration list for PBXNativeTarget "ChessClubMangager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FCB910C1D83616000DEDC7F /* Debug */,
+				7FCB910D1D83616000DEDC7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F8DBDDC1D99B49E00E52824 /* ChessClubManager.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F8DBDDD1D99B49E00E52824 /* ChessClubManager.xcdatamodel */,
+			);
+			currentVersion = 7F8DBDDD1D99B49E00E52824 /* ChessClubManager.xcdatamodel */;
+			path = ChessClubManager.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7FCB90F11D83616000DEDC7F /* Project object */;
+}
