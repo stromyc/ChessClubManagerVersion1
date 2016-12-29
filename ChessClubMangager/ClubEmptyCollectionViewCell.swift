@@ -17,8 +17,12 @@ class ClubEmptyCollectionViewCell: UICollectionViewCell {
 	var strokeColor: UIColor = UIColor.lightGray
 	let lineWidty: CGFloat = 2
 	
+    // Custom blue.
+    let customBlueColor = UIColor(red: 0/255, green: 96/255, blue: 214/255, alpha: 1.0) /* #0060d6 */
 	
-	
+    
+    
+    
 	
 	override func draw(_ rect: CGRect) {
 		
@@ -47,12 +51,12 @@ class ClubEmptyCollectionViewCell: UICollectionViewCell {
 		
 		//drawShadow(c!, inRec: rect)
 		
-		drawDashedBorder(c!, inRec: rect)
+		//drawDashedBorder(c!, inRec: rect)
 		//drawSolidBorder(c!, inRec: rect)
 		
+		drawSolidBlueRect(c!, inRec: rect)
 		
-		
-		
+		//drawBlueGradinetRect(c!, startColor: UIColor.blue.cgColor , endColor: UIColor.white.cgColor, inRec: rect)
 		
 	}
 	
@@ -96,7 +100,9 @@ class ClubEmptyCollectionViewCell: UICollectionViewCell {
 		path.stroke()
 	}
 	
-	// Set up cell to toggle this border. So if the cell has a flag set call this method otherwise set a different border.
+	
+    // Dashed gray border.
+    
 	func drawDashedBorder(_ contxt: CGContext, inRec: CGRect){
 		let lineWidty: CGFloat = 2.5
 		//let insetRect = inRec.insetBy(dx: 20, dy: lineWidty/2)
@@ -111,18 +117,69 @@ class ClubEmptyCollectionViewCell: UICollectionViewCell {
 		path.setLineDash( dashPattern, count: 2, phase: phaseStart)
 		strokeColor.setStroke()
 		path.stroke()
-		
-		
-		
-		
-		
-		
-		
-		
+
 		
 	}
 	
+    
+    
+    
+    func drawSolidBlueRect(_ contxt: CGContext, inRec: CGRect){
+        let lineWidth: CGFloat = 2.5
+        
+        let insetRect = inRec.insetBy(dx: 35, dy: 20)
+        customBlueColor.set()
+        let rectPath = UIBezierPath(rect: insetRect)
+        rectPath.fill()
+        
+        strokeColor.setStroke()
+        
+        rectPath.stroke()
+    }
+    
+    // Draw blue shaded rect.
 	
+    func drawBlueGradinetRect(_ contxt: CGContext, startColor: CGColor, endColor: CGColor, inRec: CGRect){
+        let lineWidth: CGFloat = 2.5
+        
+        let insetRect = inRec.insetBy(dx: 36, dy: 20)
+        customBlueColor.set()
+        let rectPath = UIBezierPath(rect: insetRect)
+        //rectPath.fill()
+        strokeColor.setStroke()
+        
+        rectPath.stroke()
+        
+        let clippingPath = rectPath.copy() as! UIBezierPath
+        clippingPath.addClip()
+        
+        let contxt = UIGraphicsGetCurrentContext()
+        let colors = [startColor, endColor]
+        
+        //3 - set up the color space
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        
+        //4 - set up the color stops
+        let colorLocations:[CGFloat] = [0.2, 1.0]
+        
+        //5 - create the gradient
+        let gradient = CGGradient(colorsSpace: colorSpace,
+                                  colors: colors as CFArray,
+                                  locations: colorLocations)
+        
+        //6 - draw the gradient
+        let startPoint = CGPoint.zero
+        let endPoint = CGPoint(x:0, y:self.bounds.height * 0.80)
+        
+        contxt?.drawLinearGradient(gradient!,
+                                   start: startPoint,
+                                   end: endPoint,
+                                   options: .drawsBeforeStartLocation)
+        
+
+        
+        
+    }
 	
 	
 	@IBOutlet weak var textLabel: UILabel!

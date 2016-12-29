@@ -10,6 +10,7 @@
 		7F20AA421D8B0FD700BB57C5 /* chessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA411D8B0FD700BB57C5 /* chessPiece.png */; };
 		7F20AA441D8B11B900BB57C5 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */; };
 		7F20AA461D8B238B00BB57C5 /* blueChessPiece.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */; };
+		7F80392D1DBABB9C00A60491 /* AddPlayersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F80392C1DBABB9C00A60491 /* AddPlayersTableViewController.swift */; };
 		7F8DBDD51D919FBD00E52824 /* CreateNewClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */; };
 		7F8DBDD81D97A5DF00E52824 /* mmBusinessObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8DBDD71D97A5DF00E52824 /* mmBusinessObject.swift */; };
 		7F8DBDDB1D99B44600E52824 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F8DBDDA1D99B44600E52824 /* CoreData.framework */; };
@@ -31,13 +32,17 @@
 		7FCB91041D83616000DEDC7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91031D83616000DEDC7F /* Assets.xcassets */; };
 		7FCB91071D83616000DEDC7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FCB91051D83616000DEDC7F /* LaunchScreen.storyboard */; };
 		7FF93F491DA3866800BBED4C /* trashCan.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FF93F481DA3866800BBED4C /* trashCan.png */; };
-		7FF93F4B1DA38B8B00BBED4C /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */; };
+		7FF93F4D1DA7002400BBED4C /* ClubDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F4C1DA7002400BBED4C /* ClubDetailCollectionViewController.swift */; };
+		7FF93F4F1DA746CE00BBED4C /* ClubDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F4E1DA746CE00BBED4C /* ClubDetailTableViewController.swift */; };
+		7FF93F511DA7575500BBED4C /* ClubDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F501DA7575500BBED4C /* ClubDetailCollectionViewCell.swift */; };
+		7FF93F551DAC1D2C00BBED4C /* DrawingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF93F541DAC1D2C00BBED4C /* DrawingFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F20AA411D8B0FD700BB57C5 /* chessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chessPiece.png; sourceTree = "<group>"; };
 		7F20AA431D8B11B900BB57C5 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		7F20AA451D8B238B00BB57C5 /* blueChessPiece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueChessPiece.png; sourceTree = "<group>"; };
+		7F80392C1DBABB9C00A60491 /* AddPlayersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayersTableViewController.swift; sourceTree = "<group>"; };
 		7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateNewClubViewController.swift; sourceTree = "<group>"; };
 		7F8DBDD71D97A5DF00E52824 /* mmBusinessObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mmBusinessObject.swift; sourceTree = "<group>"; };
 		7F8DBDDA1D99B44600E52824 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -61,7 +66,10 @@
 		7FCB91061D83616000DEDC7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FCB91081D83616000DEDC7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF93F481DA3866800BBED4C /* trashCan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trashCan.png; sourceTree = "<group>"; };
-		7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
+		7FF93F4C1DA7002400BBED4C /* ClubDetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailCollectionViewController.swift; sourceTree = "<group>"; };
+		7FF93F4E1DA746CE00BBED4C /* ClubDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailTableViewController.swift; sourceTree = "<group>"; };
+		7FF93F501DA7575500BBED4C /* ClubDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		7FF93F541DAC1D2C00BBED4C /* DrawingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,8 @@
 				7FA4FAED1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift */,
 				7F8DBDF31D9C59FF00E52824 /* BottomCustomButtonView.swift */,
 				7F8DBDF51D9C5A3100E52824 /* bottomCustomButtonView.xib */,
+				7FF93F501DA7575500BBED4C /* ClubDetailCollectionViewCell.swift */,
+				7FF93F541DAC1D2C00BBED4C /* DrawingFunctions.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -116,7 +126,9 @@
 			children = (
 				7FA4FAE41D88772000A0BF30 /* ClubNameCollectionViewController.swift */,
 				7F8DBDD41D919FBD00E52824 /* CreateNewClubViewController.swift */,
-				7FF93F4A1DA38B8B00BBED4C /* ClubDetailViewController.swift */,
+				7FF93F4C1DA7002400BBED4C /* ClubDetailCollectionViewController.swift */,
+				7FF93F4E1DA746CE00BBED4C /* ClubDetailTableViewController.swift */,
+				7F80392C1DBABB9C00A60491 /* AddPlayersTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -264,17 +276,21 @@
 				7F8DBDD51D919FBD00E52824 /* CreateNewClubViewController.swift in Sources */,
 				7F8DBDE01D99B4CC00E52824 /* ABusinessObject.swift in Sources */,
 				7FA4FAE71D8877F000A0BF30 /* ClubCollectionViewCell.swift in Sources */,
+				7FF93F551DAC1D2C00BBED4C /* DrawingFunctions.swift in Sources */,
 				7FA4FAEE1D888B5700A0BF30 /* ClubEmptyCollectionViewCell.swift in Sources */,
 				7F8DBDE81D9AD7CB00E52824 /* MatchEntity.swift in Sources */,
+				7FF93F4F1DA746CE00BBED4C /* ClubDetailTableViewController.swift in Sources */,
 				7F8DBDDE1D99B49E00E52824 /* ChessClubManager.xcdatamodeld in Sources */,
-				7FF93F4B1DA38B8B00BBED4C /* ClubDetailViewController.swift in Sources */,
 				7F8DBDEE1D9B278F00E52824 /* Club.swift in Sources */,
+				7FF93F4D1DA7002400BBED4C /* ClubDetailCollectionViewController.swift in Sources */,
 				7F8DBDE71D9AD7CB00E52824 /* Match.swift in Sources */,
 				7FCB90FD1D83616000DEDC7F /* AppDelegate.swift in Sources */,
 				7F8DBDD81D97A5DF00E52824 /* mmBusinessObject.swift in Sources */,
 				7F8DBDF01D9B27C500E52824 /* ClubEntity.swift in Sources */,
 				7F8DBDF41D9C59FF00E52824 /* BottomCustomButtonView.swift in Sources */,
 				7FA4FAE51D88772000A0BF30 /* ClubNameCollectionViewController.swift in Sources */,
+				7FF93F511DA7575500BBED4C /* ClubDetailCollectionViewCell.swift in Sources */,
+				7F80392D1DBABB9C00A60491 /* AddPlayersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

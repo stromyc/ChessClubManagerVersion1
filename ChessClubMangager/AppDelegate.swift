@@ -48,7 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let fntSiz : CGFloat = 20
-        let font = UIFont(name: "Noteworthy-Bold", size: fntSiz)
+        //let font = UIFont(name: "Noteworthy-Bold", size: fntSiz)
+        let font = UIFont(name: "AppleSDGothicNeo-Medium", size: fntSiz)
         if let font = font {
             
             let navigationController = application.windows[0].rootViewController as! UINavigationController

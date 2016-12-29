@@ -21,6 +21,21 @@ class ClubNameCollectionViewController: UICollectionViewController {
     // Function to place bottom toolbar with add buttton.
     //let btmView : UIView = BottomCustomButtonView.instanceFromNib()
     
+    
+//    
+//    UIColor(hue: 0.5972, saturation: 0.67, brightness: 0.92, alpha: 1.0) /* #4d8eea */
+//    UIColor(hue: 215/360, saturation: 67/100, brightness: 92/100, alpha: 1.0) /* #4d8eea */
+//    
+//    UIColor(red: 0.302, green: 0.5569, blue: 0.9176, alpha: 1.0) /* #4d8eea */
+//    UIColor(red: 77/255, green: 142/255, blue: 234/255, alpha: 1.0) /* #4d8eea */
+//    
+    
+    
+    // draws background gradient for current view.
+    let draw = DrawingFunctions()
+    
+    
+    
     let bottomCustomBar = BottomCustomButtonView()
 
     @IBOutlet weak var addClubButton: UIBarButtonItem!
@@ -29,7 +44,9 @@ class ClubNameCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // Make blue gradient background.
         
+        draw.setBlueGradientBackground(forView: self.view)
 
 		// Hides lower toolbar with delete icon.
 		navigationController!.isToolbarHidden = true
@@ -39,7 +56,7 @@ class ClubNameCollectionViewController: UICollectionViewController {
         
         // Change title of navigationBar based on  Club or no Club.
         self.navigationController?.navigationBar.topItem?.title =
-        clubList.count < 1 ? "Add a Club" : "Select A Club"
+        clubList.count > 1 ? "Add a Club" : "Select A Club"
         
         //Collection view layout
         
@@ -54,9 +71,11 @@ class ClubNameCollectionViewController: UICollectionViewController {
         self.clubList = self.club.getAllEntities()
         self.club.getAllEntitiesByDisplayOrder()
 
+       // self.view.backgroundColor = UIColor.lightGray
+        //self.collectionView?.backgroundColor = UIColor(hue: 0.5972, saturation: 0.67, brightness: 0.92, alpha: 1.0) /* #4d8eea */
         
         
-   
+        
         // Using the custom BottomCustomButton class function to load and place a bottom bar in the current view. 
         
         bottomCustomBar.placeInstanceFromNib(insideView: self.view)
@@ -201,9 +220,23 @@ class ClubNameCollectionViewController: UICollectionViewController {
     
     
     
-    
+    // Performs segue with identifier established in storyboard.
+    // Segues: MasterToClubDetail
+    // Segue: CreateNewClubSegue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard let identifier = segue.identifier else {
+            fatalError("Unidentifed Segue")
+        }
+        
+        switch identifier {
+            case "MasterToClubDetail": prepareForClubDetailSegue(segue)
+        default : break
+        }
+        
+        
+        
         if segue.identifier == "MasterToClubDetail" {
             
         }
@@ -214,6 +247,14 @@ class ClubNameCollectionViewController: UICollectionViewController {
         }
     }
 
+    
+    func prepareForClubDetailSegue(_ segue: UIStoryboardSegue) {
+        let control = segue.destination as! ClubDetailCollectionViewController
+        
+       
+        
+        //let path = collectionView?.path
+    }
     // MARK: UICollectionViewDataSource
     
     
@@ -288,6 +329,21 @@ class ClubNameCollectionViewController: UICollectionViewController {
         
         if !isEditing {
             navigationController!.setToolbarHidden(true, animated: true)
+            
+         // Perform segue when UICollectionViewCell is selected in the non-editing mode.
+        //
+            
+            
+           // performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
+            
+            
+            
+            
+            
+            
+            
+            
+            
         } else {
             navigationController!.setToolbarHidden(false, animated: true)
         }

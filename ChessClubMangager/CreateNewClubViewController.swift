@@ -11,6 +11,12 @@ import UIKit
 class CreateNewClubViewController: UIViewController {
 
     
+    
+    let drawBackGnd = DrawingFunctions()
+    
+    
+    
+    
     var newClubName : String = "No club name given"
     
     var newClubDirector : String = "No club Director name given"
@@ -21,10 +27,19 @@ class CreateNewClubViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        
+        // Make blue gradient background.
+        
+        drawBackGnd.setBlueGradientBackground(forView: self.view)
+    
+        
     }
 
+    
+    
+    
     @IBAction func saveNewClubButtonPressed(_ sender: AnyObject) {
         
         // Verifies that Club Name and Club Director text fields are filled before allowing saving.
@@ -107,12 +122,32 @@ class CreateNewClubViewController: UIViewController {
             self.newClubName = self.clubNameTextField.text!
             self.newClubDirector = clubDirectorTextField.text!
         }
-
+  
+        
+        
     }
     
    
     
-    
+    func setGradientBackground() {
+//        let colorTop =  UIColor(red: 255.0/255.0, green: 149.0/255.0, blue: 0.0/255.0, alpha: 1.0).cgColor
+//        let colorBottom = UIColor(red: 255.0/255.0, green: 94.0/255.0, blue: 58.0/255.0, alpha: 1.0).cgColor
+        
+       // let colorTop = UIColor.white.cgColor
+        
+        let colorTop = UIColor(red: 0/255, green: 96/255, blue: 214/255, alpha: 1.0).cgColor /* #0060d6 */
+        let colorBottom =  UIColor(red: 77/255, green: 142/255, blue: 234/255, alpha: 1.0).cgColor /* #4d8eea */
+        
+        
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [ colorTop, colorBottom]
+        gradientLayer.locations = [ 0.0, 0.8]
+        gradientLayer.frame = self.view.bounds
+        
+        //self.view.layer.addSublayer(gradientLayer)
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
+    }
     
     
     
